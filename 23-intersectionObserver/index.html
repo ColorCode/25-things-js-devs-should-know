@@ -6,11 +6,29 @@
     <title>IntersectionObserver</title>
     
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
+
+    
+    <script src="main-videos.js" defer></script>
+    <!-- <script src="main-divs.js" defer></script> -->
+
   </head>
   <body>
-    <div><h1>1</h1></div>
-    <div><h1>2</h1></div>
-    <div><h1>3</h1></div>
+    <div class="container">
+      <video id="1" controls playsinline loop>
+        <source src="./assets/clip1.mov" type="video/mp4" />
+      </video>
+      <video id="2" controls playsinline loop>
+        <source src="./assets/clip2.mov" type="video/mp4" />
+      </video>
+      <video id="3" controls playsinline loop>
+        <source src="./assets/clip3.mov" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- <div class="container">
+      <div id="div1" class="card">1</div>
+      <div id="div2" class="card">2</div>
+      <div id="div3" class="card">3</div>
+    </div> -->
   </body>
 </html>

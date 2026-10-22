@@ -1,21 +1,16 @@
-
-
-
 const divs = document.querySelectorAll('div')
-const threshold = 0.7
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if(entry.intersectionRatio >= threshold) {
+      if(entry.isIntersecting) {
         entry.target.classList.add('visible')
       } else {
         entry.target.classList.remove('visible')
       }
-    });
+    })
   },
   {
-    threshold: threshold,
+    threshold: 1,
   }
 )
 
